@@ -1,0 +1,885 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local FF2Ui = Instance.new("ScreenGui")
+local OpenH = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local PenumbraShadow = Instance.new("ImageLabel")
+local UmbraShadow = Instance.new("ImageLabel")
+local AmbientShadow = Instance.new("ImageLabel")
+local MainFrame = Instance.new("Frame")
+local AmbientShadow_2 = Instance.new("ImageLabel")
+local PenumbraShadow_2 = Instance.new("ImageLabel")
+local UmbraShadow_2 = Instance.new("ImageLabel")
+local Shop = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Items = Instance.new("TextButton")
+local AmbientShadow_3 = Instance.new("ImageLabel")
+local PenumbraShadow_3 = Instance.new("ImageLabel")
+local UmbraShadow_3 = Instance.new("ImageLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local ItemName = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local UIGradient_4 = Instance.new("UIGradient")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Items_2 = Instance.new("TextButton")
+local AmbientShadow_4 = Instance.new("ImageLabel")
+local PenumbraShadow_4 = Instance.new("ImageLabel")
+local UmbraShadow_4 = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local ItemName_2 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local UIGradient_6 = Instance.new("UIGradient")
+local Items_3 = Instance.new("TextButton")
+local AmbientShadow_5 = Instance.new("ImageLabel")
+local PenumbraShadow_5 = Instance.new("ImageLabel")
+local UmbraShadow_5 = Instance.new("ImageLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local ItemName_3 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local UIGradient_7 = Instance.new("UIGradient")
+local UIGradient_8 = Instance.new("UIGradient")
+local Items_4 = Instance.new("TextButton")
+local AmbientShadow_6 = Instance.new("ImageLabel")
+local PenumbraShadow_6 = Instance.new("ImageLabel")
+local UmbraShadow_6 = Instance.new("ImageLabel")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local ItemName_4 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_9 = Instance.new("TextLabel")
+local UIGradient_9 = Instance.new("UIGradient")
+local UIGradient_10 = Instance.new("UIGradient")
+local TextLabel_10 = Instance.new("TextLabel")
+local Line = Instance.new("Frame")
+local shadow = Instance.new("ImageLabel")
+local MainFrame_2 = Instance.new("Frame")
+local shadow_2 = Instance.new("ImageLabel")
+local UIGradient_11 = Instance.new("UIGradient")
+local Exit = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_11 = Instance.new("TextLabel")
+
+--Properties:
+
+FF2Ui.Name = "FF2Ui"
+FF2Ui.Parent = game:GetService("CoreGui")
+FF2Ui.ResetOnSpawn = false
+
+OpenH.Name = "OpenH"
+OpenH.Parent = FF2Ui
+OpenH.AnchorPoint = Vector2.new(0.5, 0.5)
+OpenH.BackgroundColor3 = Color3.fromRGB(247, 247, 247)
+OpenH.BorderSizePixel = 0
+OpenH.Position = UDim2.new(0.934500635, 0, 0.341746092, 0)
+OpenH.Size = UDim2.new(0.107000001, 0, 0.0790000036, 0)
+OpenH.ZIndex = 2
+OpenH.Font = Enum.Font.GothamMedium
+OpenH.Text = ""
+OpenH.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenH.TextScaled = true
+OpenH.TextSize = 14.000
+OpenH.TextWrapped = true
+
+TextLabel.Parent = OpenH
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel.Size = UDim2.new(1, 0, 0.966950119, 0)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Ff2"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 25.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(229, 133, 36)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 204, 74))}
+UIGradient.Parent = OpenH
+
+PenumbraShadow.Name = "PenumbraShadow"
+PenumbraShadow.Parent = OpenH
+PenumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow.BackgroundTransparency = 1.000
+PenumbraShadow.BorderSizePixel = 0
+PenumbraShadow.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow.ZIndex = 0
+PenumbraShadow.Image = "rbxassetid://1316045217"
+PenumbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow.ImageTransparency = 0.880
+PenumbraShadow.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow.Name = "UmbraShadow"
+UmbraShadow.Parent = OpenH
+UmbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow.BackgroundTransparency = 1.000
+UmbraShadow.BorderSizePixel = 0
+UmbraShadow.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow.ZIndex = 0
+UmbraShadow.Image = "rbxassetid://1316045217"
+UmbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow.ImageTransparency = 0.860
+UmbraShadow.ScaleType = Enum.ScaleType.Slice
+UmbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+AmbientShadow.Name = "AmbientShadow"
+AmbientShadow.Parent = OpenH
+AmbientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow.BackgroundTransparency = 1.000
+AmbientShadow.BorderSizePixel = 0
+AmbientShadow.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow.ZIndex = 0
+AmbientShadow.Image = "rbxassetid://1316045217"
+AmbientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow.ImageTransparency = 0.800
+AmbientShadow.ScaleType = Enum.ScaleType.Slice
+AmbientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = FF2Ui
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.5, 0, 1.5, 0)
+MainFrame.Size = UDim2.new(0.551232159, 0, 0.639686704, 0)
+
+AmbientShadow_2.Name = "AmbientShadow"
+AmbientShadow_2.Parent = MainFrame
+AmbientShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow_2.BackgroundTransparency = 1.000
+AmbientShadow_2.BorderSizePixel = 0
+AmbientShadow_2.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow_2.Size = UDim2.new(1.01176476, 0, 1.02040815, 0)
+AmbientShadow_2.Visible = false
+AmbientShadow_2.ZIndex = 0
+AmbientShadow_2.Image = "rbxassetid://1316045217"
+AmbientShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow_2.ImageTransparency = 0.800
+AmbientShadow_2.ScaleType = Enum.ScaleType.Slice
+AmbientShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+PenumbraShadow_2.Name = "PenumbraShadow"
+PenumbraShadow_2.Parent = MainFrame
+PenumbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_2.BackgroundTransparency = 1.000
+PenumbraShadow_2.BorderSizePixel = 0
+PenumbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_2.Size = UDim2.new(1.04235291, 0, 1.0734694, 0)
+PenumbraShadow_2.Visible = false
+PenumbraShadow_2.ZIndex = 0
+PenumbraShadow_2.Image = "rbxassetid://1316045217"
+PenumbraShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow_2.ImageTransparency = 0.880
+PenumbraShadow_2.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow_2.Name = "UmbraShadow"
+UmbraShadow_2.Parent = MainFrame
+UmbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow_2.BackgroundTransparency = 1.000
+UmbraShadow_2.BorderSizePixel = 0
+UmbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow_2.Size = UDim2.new(1.02352941, 0, 1.04081631, 0)
+UmbraShadow_2.Visible = false
+UmbraShadow_2.ZIndex = 0
+UmbraShadow_2.Image = "rbxassetid://1316045217"
+UmbraShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow_2.ImageTransparency = 0.860
+UmbraShadow_2.ScaleType = Enum.ScaleType.Slice
+UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+Shop.Name = "Shop"
+Shop.Parent = MainFrame
+Shop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shop.BackgroundTransparency = 1.000
+Shop.BorderSizePixel = 0
+Shop.Position = UDim2.new(0.00352941174, 0, 0, -3)
+Shop.Size = UDim2.new(0.995294094, 0, 0.20408164, 0)
+Shop.ZIndex = 2
+Shop.Font = Enum.Font.SourceSansBold
+Shop.Text = "Ff2 Scripts"
+Shop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Shop.TextScaled = true
+Shop.TextSize = 14.000
+Shop.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(120, 67, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 206, 107))}
+UIGradient_2.Parent = MainFrame
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.Active = true
+ScrollingFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.5, 0, 0.618285716, 0)
+ScrollingFrame.Size = UDim2.new(1, 0, 0.763265312, 0)
+ScrollingFrame.ScrollBarThickness = 5
+
+Items.Name = "Items"
+Items.Parent = ScrollingFrame
+Items.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Items.BorderSizePixel = 0
+Items.Position = UDim2.new(0.119999997, 0, 0.0334534682, 0)
+Items.Size = UDim2.new(0, 109, 0, 72)
+Items.ZIndex = 2
+Items.Font = Enum.Font.SourceSansBold
+Items.Text = ""
+Items.TextColor3 = Color3.fromRGB(255, 106, 248)
+Items.TextScaled = true
+Items.TextSize = 14.000
+Items.TextWrapped = true
+
+AmbientShadow_3.Name = "AmbientShadow"
+AmbientShadow_3.Parent = Items
+AmbientShadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow_3.BackgroundTransparency = 1.000
+AmbientShadow_3.BorderSizePixel = 0
+AmbientShadow_3.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow_3.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow_3.Image = "rbxassetid://1316045217"
+AmbientShadow_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow_3.ImageTransparency = 0.950
+AmbientShadow_3.ScaleType = Enum.ScaleType.Slice
+AmbientShadow_3.SliceCenter = Rect.new(10, 10, 118, 118)
+
+PenumbraShadow_3.Name = "PenumbraShadow"
+PenumbraShadow_3.Parent = Items
+PenumbraShadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_3.BackgroundTransparency = 1.000
+PenumbraShadow_3.BorderSizePixel = 0
+PenumbraShadow_3.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_3.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow_3.Image = "rbxassetid://1316045217"
+PenumbraShadow_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow_3.ImageTransparency = 0.950
+PenumbraShadow_3.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_3.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow_3.Name = "UmbraShadow"
+UmbraShadow_3.Parent = Items
+UmbraShadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow_3.BackgroundTransparency = 1.000
+UmbraShadow_3.BorderSizePixel = 0
+UmbraShadow_3.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow_3.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow_3.Image = "rbxassetid://1316045217"
+UmbraShadow_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow_3.ImageTransparency = 0.950
+UmbraShadow_3.ScaleType = Enum.ScaleType.Slice
+UmbraShadow_3.SliceCenter = Rect.new(10, 10, 118, 118)
+
+ImageLabel.Parent = Items
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.00999999978, 0, 0.0111111114, 0)
+ImageLabel.Size = UDim2.new(0, 98, 0, 88)
+ImageLabel.ZIndex = 2
+ImageLabel.Image = "rbxassetid://6091310684"
+ImageLabel.ImageTransparency = 1.000
+
+TextLabel_2.Parent = ImageLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 99, 0, 88)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "Ui Hub"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 28.000
+TextLabel_2.TextWrapped = true
+
+ItemName.Name = "ItemName"
+ItemName.Parent = Items
+ItemName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ItemName.Position = UDim2.new(2.98023224e-08, 0, 0.899999976, 0)
+ItemName.Size = UDim2.new(0, 66, 0, 18)
+ItemName.ZIndex = 2
+ItemName.Font = Enum.Font.SourceSansBold
+ItemName.Text = ""
+ItemName.TextColor3 = Color3.fromRGB(255, 255, 255)
+ItemName.TextSize = 14.000
+
+UICorner.Parent = ItemName
+
+TextLabel_3.Parent = ItemName
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0, 66, 0, 18)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "By Us"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 173, 58)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(209, 120, 69))}
+UIGradient_3.Parent = ItemName
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(175, 97, 45)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 206, 107))}
+UIGradient_4.Parent = Items
+
+UIGridLayout.Parent = ScrollingFrame
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 9, 0, 15)
+UIGridLayout.CellSize = UDim2.new(0, 100, 0, 90)
+
+Items_2.Name = "Items"
+Items_2.Parent = ScrollingFrame
+Items_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Items_2.BorderSizePixel = 0
+Items_2.Position = UDim2.new(0.119999997, 0, 0.0334534682, 0)
+Items_2.Size = UDim2.new(0, 109, 0, 72)
+Items_2.ZIndex = 2
+Items_2.Font = Enum.Font.SourceSansBold
+Items_2.Text = ""
+Items_2.TextColor3 = Color3.fromRGB(255, 106, 248)
+Items_2.TextScaled = true
+Items_2.TextSize = 14.000
+Items_2.TextWrapped = true
+
+AmbientShadow_4.Name = "AmbientShadow"
+AmbientShadow_4.Parent = Items_2
+AmbientShadow_4.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow_4.BackgroundTransparency = 1.000
+AmbientShadow_4.BorderSizePixel = 0
+AmbientShadow_4.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow_4.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow_4.Image = "rbxassetid://1316045217"
+AmbientShadow_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow_4.ImageTransparency = 0.950
+AmbientShadow_4.ScaleType = Enum.ScaleType.Slice
+AmbientShadow_4.SliceCenter = Rect.new(10, 10, 118, 118)
+
+PenumbraShadow_4.Name = "PenumbraShadow"
+PenumbraShadow_4.Parent = Items_2
+PenumbraShadow_4.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_4.BackgroundTransparency = 1.000
+PenumbraShadow_4.BorderSizePixel = 0
+PenumbraShadow_4.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_4.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow_4.Image = "rbxassetid://1316045217"
+PenumbraShadow_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow_4.ImageTransparency = 0.950
+PenumbraShadow_4.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_4.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow_4.Name = "UmbraShadow"
+UmbraShadow_4.Parent = Items_2
+UmbraShadow_4.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow_4.BackgroundTransparency = 1.000
+UmbraShadow_4.BorderSizePixel = 0
+UmbraShadow_4.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow_4.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow_4.Image = "rbxassetid://1316045217"
+UmbraShadow_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow_4.ImageTransparency = 0.950
+UmbraShadow_4.ScaleType = Enum.ScaleType.Slice
+UmbraShadow_4.SliceCenter = Rect.new(10, 10, 118, 118)
+
+ImageLabel_2.Parent = Items_2
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.00999999978, 0, 0.0111111114, 0)
+ImageLabel_2.Size = UDim2.new(0, 98, 0, 88)
+ImageLabel_2.ZIndex = 2
+ImageLabel_2.Image = "rbxassetid://6091310684"
+ImageLabel_2.ImageTransparency = 1.000
+
+TextLabel_4.Parent = ImageLabel_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(0, 99, 0, 88)
+TextLabel_4.ZIndex = 2
+TextLabel_4.Font = Enum.Font.FredokaOne
+TextLabel_4.Text = "N/A"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 28.000
+TextLabel_4.TextWrapped = true
+
+ItemName_2.Name = "ItemName"
+ItemName_2.Parent = Items_2
+ItemName_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ItemName_2.Position = UDim2.new(2.98023224e-08, 0, 0.899999976, 0)
+ItemName_2.Size = UDim2.new(0, 66, 0, 18)
+ItemName_2.ZIndex = 2
+ItemName_2.Font = Enum.Font.SourceSansBold
+ItemName_2.Text = ""
+ItemName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ItemName_2.TextSize = 14.000
+
+UICorner_2.Parent = ItemName_2
+
+TextLabel_5.Parent = ItemName_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Size = UDim2.new(0, 66, 0, 18)
+TextLabel_5.ZIndex = 2
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Unavailable"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 173, 58)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(209, 120, 69))}
+UIGradient_5.Parent = ItemName_2
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(175, 97, 45)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 206, 107))}
+UIGradient_6.Parent = Items_2
+
+Items_3.Name = "Items"
+Items_3.Parent = ScrollingFrame
+Items_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Items_3.BorderSizePixel = 0
+Items_3.Position = UDim2.new(0.119999997, 0, 0.0334534682, 0)
+Items_3.Size = UDim2.new(0, 109, 0, 72)
+Items_3.ZIndex = 2
+Items_3.Font = Enum.Font.SourceSansBold
+Items_3.Text = ""
+Items_3.TextColor3 = Color3.fromRGB(255, 106, 248)
+Items_3.TextScaled = true
+Items_3.TextSize = 14.000
+Items_3.TextWrapped = true
+
+AmbientShadow_5.Name = "AmbientShadow"
+AmbientShadow_5.Parent = Items_3
+AmbientShadow_5.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow_5.BackgroundTransparency = 1.000
+AmbientShadow_5.BorderSizePixel = 0
+AmbientShadow_5.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow_5.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow_5.Image = "rbxassetid://1316045217"
+AmbientShadow_5.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow_5.ImageTransparency = 0.950
+AmbientShadow_5.ScaleType = Enum.ScaleType.Slice
+AmbientShadow_5.SliceCenter = Rect.new(10, 10, 118, 118)
+
+PenumbraShadow_5.Name = "PenumbraShadow"
+PenumbraShadow_5.Parent = Items_3
+PenumbraShadow_5.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_5.BackgroundTransparency = 1.000
+PenumbraShadow_5.BorderSizePixel = 0
+PenumbraShadow_5.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_5.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow_5.Image = "rbxassetid://1316045217"
+PenumbraShadow_5.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow_5.ImageTransparency = 0.950
+PenumbraShadow_5.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_5.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow_5.Name = "UmbraShadow"
+UmbraShadow_5.Parent = Items_3
+UmbraShadow_5.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow_5.BackgroundTransparency = 1.000
+UmbraShadow_5.BorderSizePixel = 0
+UmbraShadow_5.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow_5.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow_5.Image = "rbxassetid://1316045217"
+UmbraShadow_5.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow_5.ImageTransparency = 0.950
+UmbraShadow_5.ScaleType = Enum.ScaleType.Slice
+UmbraShadow_5.SliceCenter = Rect.new(10, 10, 118, 118)
+
+ImageLabel_3.Parent = Items_3
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.00999999978, 0, 0.0111111114, 0)
+ImageLabel_3.Size = UDim2.new(0, 98, 0, 88)
+ImageLabel_3.ZIndex = 2
+ImageLabel_3.Image = "rbxassetid://6091310684"
+ImageLabel_3.ImageTransparency = 1.000
+
+TextLabel_6.Parent = ImageLabel_3
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Size = UDim2.new(0, 99, 0, 88)
+TextLabel_6.ZIndex = 2
+TextLabel_6.Font = Enum.Font.FredokaOne
+TextLabel_6.Text = "N/A"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 28.000
+TextLabel_6.TextWrapped = true
+
+ItemName_3.Name = "ItemName"
+ItemName_3.Parent = Items_3
+ItemName_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ItemName_3.Position = UDim2.new(2.98023224e-08, 0, 0.899999976, 0)
+ItemName_3.Size = UDim2.new(0, 66, 0, 18)
+ItemName_3.ZIndex = 2
+ItemName_3.Font = Enum.Font.SourceSansBold
+ItemName_3.Text = ""
+ItemName_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ItemName_3.TextSize = 14.000
+
+UICorner_3.Parent = ItemName_3
+
+TextLabel_7.Parent = ItemName_3
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Size = UDim2.new(0, 66, 0, 18)
+TextLabel_7.ZIndex = 2
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "Unavailable"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 173, 58)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(209, 120, 69))}
+UIGradient_7.Parent = ItemName_3
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(175, 97, 45)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 206, 107))}
+UIGradient_8.Parent = Items_3
+
+Items_4.Name = "Items"
+Items_4.Parent = ScrollingFrame
+Items_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Items_4.BorderSizePixel = 0
+Items_4.Position = UDim2.new(0.119999997, 0, 0.0334534682, 0)
+Items_4.Size = UDim2.new(0, 109, 0, 72)
+Items_4.ZIndex = 2
+Items_4.Font = Enum.Font.SourceSansBold
+Items_4.Text = ""
+Items_4.TextColor3 = Color3.fromRGB(255, 106, 248)
+Items_4.TextScaled = true
+Items_4.TextSize = 14.000
+Items_4.TextWrapped = true
+
+AmbientShadow_6.Name = "AmbientShadow"
+AmbientShadow_6.Parent = Items_4
+AmbientShadow_6.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow_6.BackgroundTransparency = 1.000
+AmbientShadow_6.BorderSizePixel = 0
+AmbientShadow_6.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow_6.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow_6.Image = "rbxassetid://1316045217"
+AmbientShadow_6.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow_6.ImageTransparency = 0.950
+AmbientShadow_6.ScaleType = Enum.ScaleType.Slice
+AmbientShadow_6.SliceCenter = Rect.new(10, 10, 118, 118)
+
+PenumbraShadow_6.Name = "PenumbraShadow"
+PenumbraShadow_6.Parent = Items_4
+PenumbraShadow_6.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_6.BackgroundTransparency = 1.000
+PenumbraShadow_6.BorderSizePixel = 0
+PenumbraShadow_6.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_6.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow_6.Image = "rbxassetid://1316045217"
+PenumbraShadow_6.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow_6.ImageTransparency = 0.950
+PenumbraShadow_6.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_6.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow_6.Name = "UmbraShadow"
+UmbraShadow_6.Parent = Items_4
+UmbraShadow_6.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow_6.BackgroundTransparency = 1.000
+UmbraShadow_6.BorderSizePixel = 0
+UmbraShadow_6.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow_6.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow_6.Image = "rbxassetid://1316045217"
+UmbraShadow_6.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow_6.ImageTransparency = 0.950
+UmbraShadow_6.ScaleType = Enum.ScaleType.Slice
+UmbraShadow_6.SliceCenter = Rect.new(10, 10, 118, 118)
+
+ImageLabel_4.Parent = Items_4
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.00999999978, 0, 0.0111111114, 0)
+ImageLabel_4.Size = UDim2.new(0, 98, 0, 88)
+ImageLabel_4.ZIndex = 2
+ImageLabel_4.Image = "rbxassetid://6091310684"
+ImageLabel_4.ImageTransparency = 1.000
+
+TextLabel_8.Parent = ImageLabel_4
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Size = UDim2.new(0, 99, 0, 88)
+TextLabel_8.ZIndex = 2
+TextLabel_8.Font = Enum.Font.FredokaOne
+TextLabel_8.Text = "N/A"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 28.000
+TextLabel_8.TextWrapped = true
+
+ItemName_4.Name = "ItemName"
+ItemName_4.Parent = Items_4
+ItemName_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ItemName_4.Position = UDim2.new(2.98023224e-08, 0, 0.899999976, 0)
+ItemName_4.Size = UDim2.new(0, 66, 0, 18)
+ItemName_4.ZIndex = 2
+ItemName_4.Font = Enum.Font.SourceSansBold
+ItemName_4.Text = ""
+ItemName_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ItemName_4.TextSize = 14.000
+
+UICorner_4.Parent = ItemName_4
+
+TextLabel_9.Parent = ItemName_4
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Size = UDim2.new(0, 66, 0, 18)
+TextLabel_9.ZIndex = 2
+TextLabel_9.Font = Enum.Font.SourceSansBold
+TextLabel_9.Text = "Unavailable"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 173, 58)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(209, 120, 69))}
+UIGradient_9.Parent = ItemName_4
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(175, 97, 45)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 206, 107))}
+UIGradient_10.Parent = Items_4
+
+TextLabel_10.Name = "©"
+TextLabel_10.Parent = MainFrame
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.0120000141, 0, 0.904999912, 0)
+TextLabel_10.Size = UDim2.new(0.987999916, 0, 0.0938775539, 0)
+TextLabel_10.Font = Enum.Font.SourceSansBold
+TextLabel_10.Text = "By Barbaric | Ui Hub"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextTransparency = 0.500
+TextLabel_10.TextWrapped = true
+TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+
+Line.Name = "Line"
+Line.Parent = MainFrame
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0.180000007, 0, 0.200000003, 0)
+Line.Size = UDim2.new(0.647058845, 0, 0.00408163248, 0)
+Line.ZIndex = 2
+
+shadow.Name = "shadow"
+shadow.Parent = MainFrame
+shadow.Active = true
+shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+shadow.BackgroundTransparency = 1.000
+shadow.BorderSizePixel = 0
+shadow.Position = UDim2.new(0.5, 5, 0.5, 5)
+shadow.Size = UDim2.new(1.01647055, 0, 1.02857149, 0)
+shadow.ZIndex = 0
+shadow.Image = "rbxassetid://1316045217"
+shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+shadow.ImageTransparency = 0.600
+shadow.ScaleType = Enum.ScaleType.Slice
+shadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+MainFrame_2.Name = "MainFrame"
+MainFrame_2.Parent = MainFrame
+MainFrame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame_2.BorderSizePixel = 0
+MainFrame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame_2.Rotation = 3.000
+MainFrame_2.Size = UDim2.new(1, 0, 1, 0)
+MainFrame_2.ZIndex = 0
+
+shadow_2.Name = "shadow"
+shadow_2.Parent = MainFrame_2
+shadow_2.Active = true
+shadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+shadow_2.BackgroundTransparency = 1.000
+shadow_2.BorderSizePixel = 0
+shadow_2.Position = UDim2.new(0.5, 5, 0.5, 5)
+shadow_2.Size = UDim2.new(1.01647055, 0, 1.02857149, 0)
+shadow_2.ZIndex = 0
+shadow_2.Image = "rbxassetid://1316045217"
+shadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+shadow_2.ImageTransparency = 0.600
+shadow_2.ScaleType = Enum.ScaleType.Slice
+shadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(120, 67, 31)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 206, 107))}
+UIGradient_11.Parent = MainFrame_2
+
+Exit.Name = "Exit"
+Exit.Parent = MainFrame
+Exit.AnchorPoint = Vector2.new(0.5, 0.5)
+Exit.BackgroundColor3 = Color3.fromRGB(255, 65, 68)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.975233495, 0, 0.0354887135, 0)
+Exit.Size = UDim2.new(0.0799999982, 0, 0.127000004, 0)
+Exit.ZIndex = 2
+Exit.Font = Enum.Font.FredokaOne
+Exit.Text = ""
+Exit.TextColor3 = Color3.fromRGB(255, 65, 68)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+UICorner_5.Parent = Exit
+
+TextLabel_11.Parent = Exit
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0, 0, 1.68660407e-07, 0)
+TextLabel_11.Size = UDim2.new(1.00000012, 0, 1, 0)
+TextLabel_11.ZIndex = 3
+TextLabel_11.Font = Enum.Font.FredokaOne
+TextLabel_11.Text = "X"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+-- Scripts:
+
+local function USINILB_fake_script() -- OpenH.SoundEffect 
+	local script = Instance.new('LocalScript', OpenH)
+
+	function PlaySound( )
+		script.Parent.Click:Play( )
+	end
+	script.Parent.MouseButton1Click:connect(PlaySound)
+end
+coroutine.wrap(USINILB_fake_script)()
+local function VFLDEKN_fake_script() -- OpenH.LocalScript 
+	local script = Instance.new('LocalScript', OpenH)
+
+	local b = script.Parent
+	
+	b.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame:TweenPosition(UDim2.new(0.5, 0,0.5, 0), "Out", "Elastic", 1)
+	end)
+end
+coroutine.wrap(VFLDEKN_fake_script)()
+local function WGVJ_fake_script() -- OpenH.ClickEffect 
+	local script = Instance.new('LocalScript', OpenH)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.093, 0,0.068, 0),"Out","Quart",.5,true) -- di pencet
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.107, 0,0.079, 0),"Out","Quart",.5,true)
+	end)
+end
+coroutine.wrap(WGVJ_fake_script)()
+local function LWXZOU_fake_script() -- OpenH.RotationEffect 
+	local script = Instance.new('LocalScript', OpenH)
+
+	script.Parent.MouseEnter:Connect(function()
+		for i = 0,-5,-5 do
+			wait()
+			script.Parent.Rotation = i
+		end
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		for i = -5,0,5 do
+			wait()
+			script.Parent.Rotation = i
+		end
+	end)
+end
+coroutine.wrap(LWXZOU_fake_script)()
+local function GFDW_fake_script() -- Items.LocalScript 
+	local script = Instance.new('LocalScript', Items)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		getgenv().Variables = {}
+	
+		Variables.Players = game:GetService("Players")
+		Variables.ReplicatedStorage = game:GetService("ReplicatedStorage")
+		Variables.UserInputService = game:GetService("UserInputService")
+		Variables.Client = Variables.Players.LocalPlayer
+		Variables.Character = Variables.Client.Character or Variables.Client.CharacterAdded:Wait()
+	
+		Variables.Client.CharacterAdded:Connect(function(Character)
+			Variables.Character = Character 
+		end)
+	
+		Variables.Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/yoo123fd/f/master/ui.lua"))()
+		Variables.Window = Variables.Library:AddWindow({
+			title = {
+				"Barbaric's Hub",
+				"We recommend an alt."
+			},
+			default = true,
+			theme = {
+				Accent = Color3.fromRGB(120, 0, 255),
+				TopbarColor = Color3.fromRGB(10, 10, 10),
+				SidebarColor = Color3.fromRGB(10, 0, 30),
+				BackgroundColor = Color3.fromRGB(10, 10, 10),
+				SectionColor = Color3.fromRGB(0, 0, 10),
+				TextColor = Color3.fromRGB(120, 15, 300),
+				Objects = {},
+			}
+		})
+		Variables.Physics = Variables.Window:AddTab("Have fun.")
+		Variables.CatchingTab = Variables.Window:AddTab("Catching")
+		Variables.Kicking = Variables.Window:AddTab("Kicking")
+		-- // Bootup
+	
+		Variables.Mags = loadstring(game:HttpGet("https://raw.githubusercontent.com/yoo123fd/f/master/Modules/Catching/Mags.lua"))()
+		Variables.Grapher = loadstring(game:HttpGet("https://raw.githubusercontent.com/yoo123fd/f/master/Modules/Catching/Grapher.lua"))()
+		Variables.Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/yoo123fd/f/master/Modules/Kicking/Aimbot.lua"))()
+		Variables.Tracer = loadstring(game:HttpGet("https://raw.githubusercontent.com/yoo123fd/f/master/Modules/Catching/Tracer.lua"))()
+	end)
+end
+coroutine.wrap(GFDW_fake_script)()
+local function BRHV_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	local b = script.Parent
+	
+	-- exit
+	
+	b.MouseButton1Click:Connect(function()
+		script.Parent.Parent:TweenPosition(UDim2.new(0.5, 0,1.5, 0), "Out", "Elastic", 1)
+	end)
+end
+coroutine.wrap(BRHV_fake_script)()
+local function PJXTM_fake_script() -- Exit.ClickEffect 
+	local script = Instance.new('LocalScript', Exit)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.073, 0,0.112, 0),"Out","Quad",.1,true)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.08, 0,0.127, 0),"Out","Quad",.1,true)
+	end)
+end
+coroutine.wrap(PJXTM_fake_script)()
